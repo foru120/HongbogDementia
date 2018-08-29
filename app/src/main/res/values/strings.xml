@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Eye O\'Clock</string>
+    <string name="no_image">No Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="result_text">Result</string>
+    <string name="disease_text">Name of     \nDisease</string>
+    <string name="acc_text">Accuracy     </string>
+</resources>
