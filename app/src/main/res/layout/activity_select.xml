@@ -169,6 +169,7 @@
                 android:fontFamily="@font/myriadprobold" />
         </TableRow>
 
+        <!--
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -198,6 +199,7 @@
                 android:textSize="40dp"
                 android:fontFamily="@font/myriadprobold" />
         </TableRow>
+        -->
     </TableLayout>
 
     <!-- 이미지 선택 및 진단 버튼 부분 -->

@@ -23,7 +23,7 @@ public class SelectActivity extends AppCompatActivity {
     public ImageView imgOriginal;
     public ImageView imgCAM;
     private TextView txtDisease;
-    private TextView txtAccuracy;
+//    private TextView txtAccuracy;
 
     private Button btnGallery;
     private Button btnDiagnosis;
@@ -47,7 +47,7 @@ public class SelectActivity extends AppCompatActivity {
         imgOriginal = (ImageView) findViewById(R.id.imgOriginal);
         imgCAM = (ImageView) findViewById(R.id.imgCAM);
         txtDisease = (TextView) findViewById(R.id.diseaseTxt);
-        txtAccuracy = (TextView) findViewById(R.id.accuracyTxt);
+//        txtAccuracy = (TextView) findViewById(R.id.accuracyTxt);
 
         btnGallery = (Button) findViewById(R.id.btnGallery);
         btnDiagnosis = (Button) findViewById(R.id.btnDiagnosis);
@@ -89,11 +89,11 @@ public class SelectActivity extends AppCompatActivity {
                 Bitmap bitmapTmp = Bitmap.createScaledBitmap(tmpBitmap, classifier.getWIDTH(), classifier.getHEIGHT(), false);
                 classifier.dementiaDiagnosis(classifier.normalize(bitmapTmp));
                 String label = classifier.getClassificationLabel(classifier.getLogits());
-                int percentage = classifier.getClassificationPercentage(classifier.getLogits());
+//                int percentage = classifier.getClassificationPercentage(classifier.getLogits());
                 Bitmap camBitmap = classifier.gradcamVisualization(tmpBitmap);
                 imgCAM.setImageBitmap(camBitmap);
                 txtDisease.setText(label);
-                txtAccuracy.setText(percentage + "%");
+//                txtAccuracy.setText(percentage + "%");
             }
         }
     }
